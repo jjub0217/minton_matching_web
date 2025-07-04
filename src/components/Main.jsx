@@ -11,7 +11,7 @@ const MatchingList = styled.ul`
 `;
 
 export const Main = () => {
-  // 서버에서 받아올 예정인 동네 리스트
+  // 서버에서 받아올 예정인 카드 리스트
   const cardList = [
     {
       id: 1,
