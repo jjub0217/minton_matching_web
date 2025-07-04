@@ -121,27 +121,19 @@ export const CardDetailPage = () => {
             <span
               className={
                 detail.participants.list.length >
-                detail.participants.count.total
+                detail.participants.count.capacity
                   ? "over-capacity"
                   : ""
               }
             >
               {detail.participants.list.length}
             </span>
-            <span> / {detail.participants.count.total}</span>
+            <span> / {detail.participants.count.capacity}</span>
           </p>
         </ParticipantCount>
 
         {/* 미팅 참여인원 정보 */}
         <ParticipantsSection participants={detail.participants.list} />
-        {/* <ParticipantsList>
-            {detail.participants.list.map((el) => (
-              <ParticipantItem {...el} key={el.id} />
-            ))}
-          </ParticipantsList> */}
-        {/* 미팅 참여인원이 많다면, 더보기 버튼을 누르기전에는 보이지 않다가 더보기 버튼을 누르면 보일 예정 */}
-        {/* <button className="more-btn">더보기</button> */}
-        {/* </ParticipantsSection> */}
 
         {/* 미팅 참여 여부 영역 */}
         <ParticipantActions>
