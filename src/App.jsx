@@ -1,9 +1,9 @@
-import "./App.css";
-
+import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import { FilterSection } from "./components/FilterSection";
-import { Main } from "./components/Main";
-import { MyNeighborhoods } from "./components/MyNeighborhoods";
+import "./App.css";
+import { CardDetailPage } from "./pages/CardDetailPage/CardDetailPage";
+import { MainPage } from "./pages/MainPage";
+import { UserProfilePage } from "./pages/UserProfilePage/UserProfilePage";
 
 const Container = styled.div`
   max-width: 800px;
@@ -21,11 +21,11 @@ const Container = styled.div`
 
 function App() {
   return (
-    <Container>
-      <MyNeighborhoods />
-      <FilterSection />
-      <Main />
-    </Container>
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/detail/:id" element={<CardDetailPage />} />
+      <Route path="/userInfo/:userId" element={<UserProfilePage />} />
+    </Routes>
   );
 }
 
