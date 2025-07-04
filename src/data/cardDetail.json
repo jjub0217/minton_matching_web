@@ -1,0 +1,152 @@
+{
+  "meetingDetail": {
+    "title": "[초보환영] 강남구 배드민턴 매칭",
+    "imgUrl": "https://www.nowonsc.kr/design/homepage/nowon/img/sub/badminton_img0301.jpg",
+    "user": {
+      "id": "user123",
+      "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+      "location": "강남구",
+      "postedAgo": "2시간 전 등록"
+    },
+    "time": "6월 20일 토요일, 오후 7:00시",
+    "place": "강남구민체육관 2층 배드민턴장",
+    "description": "초보자도 환영합니다! 친근한 분위기에서 배드민턴을 즐겨보세요. 라켓이 없어도 대여 가능합니다. 참가비 5,000원.",
+    "map": {
+      "image": "https://designcompass.org/wp-content/uploads/2025/06/kakaomap-subway-08.jpg",
+      "place": "강남구민체육관",
+      "address": "서울 강남구 역삼로 123"
+    },
+    "likes": 23,
+    "views": 133,
+    "participants": {
+      "count": {
+        "currentCapacity": 1,
+        "capacity": 14
+      },
+      "list": [
+        {
+          "id": 1,
+          "userName": "user123",
+          "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+          "role": "주최"
+        },
+        {
+          "id": 2,
+          "userName": "badminton_girl",
+          "profileImg": "https://randomuser.me/api/portraits/women/44.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 3,
+          "userName": "shuttleking",
+          "profileImg": "https://randomuser.me/api/portraits/men/45.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 4,
+          "userName": "user1234",
+          "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 5,
+          "userName": "badminton_girl1",
+          "profileImg": "https://randomuser.me/api/portraits/women/44.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 6,
+          "userName": "shuttleking1",
+          "profileImg": "https://randomuser.me/api/portraits/men/45.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 7,
+          "userName": "user12345",
+          "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 8,
+          "userName": "badminton_girl3",
+          "profileImg": "https://randomuser.me/api/portraits/women/44.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 9,
+          "userName": "shuttleking3",
+          "profileImg": "https://randomuser.me/api/portraits/men/45.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 10,
+          "userName": "user123456",
+          "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 11,
+          "userName": "badminton_girl4",
+          "profileImg": "https://randomuser.me/api/portraits/women/44.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 12,
+          "userName": "shuttleking4",
+          "profileImg": "https://randomuser.me/api/portraits/men/45.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 13,
+          "userName": "user1234567",
+          "profileImg": "https://randomuser.me/api/portraits/men/32.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 14,
+          "userName": "badminton_girl5",
+          "profileImg": "https://randomuser.me/api/portraits/women/44.jpg",
+          "role": "참여"
+        },
+        {
+          "id": 15,
+          "userName": "shuttleking5",
+          "profileImg": "https://randomuser.me/api/portraits/men/45.jpg",
+          "role": "대기"
+        }
+      ]
+    },
+    "recommendations": [
+      {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+        "title": "초보 환영 배드민턴",
+        "location": "송파구"
+      },
+      {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80",
+        "title": "아침 모임",
+        "location": "강동구"
+      },
+      {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
+        "title": "주말 번개",
+        "location": "관악구"
+      },
+      {
+        "id": 4,
+        "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80",
+        "title": "아침 모임",
+        "location": "강동구"
+      },
+      {
+        "id": 5,
+        "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+        "title": "초보 환영 배드민턴",
+        "location": "송파구"
+      }
+    ]
+  }
+}
