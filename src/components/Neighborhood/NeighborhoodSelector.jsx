@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { NeighborhoodsContainer } from "./MyNeighborhoods.styles";
+import { NeighborhoodsContainer } from "./NeighborhoodSelector.styles";
 
-export const MyNeighborhoods = () => {
+export const NeighborhoodSelector = () => {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState("강남구");
 
   // 서버에서 받아올 예정인 동네 리스트

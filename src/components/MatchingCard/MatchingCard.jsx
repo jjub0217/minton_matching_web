@@ -12,12 +12,10 @@ import {
 } from "./MatchingCard.styles";
 
 // matching-card
-
 export const MatchingCard = ({ card }) => {
   const {
     id,
     title,
-    beginner,
     description,
     imgUrl,
     place,

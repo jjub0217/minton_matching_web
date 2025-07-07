@@ -15,13 +15,6 @@ export const MatchingCardItem = styled.li`
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
   }
-
-  @media (max-width: 640px) {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    min-width: 0;
-  }
 `;
 
 // card-content
@@ -34,7 +27,6 @@ export const CardMainInfoBox = styled.div`
   color: #f3f4f6;
 
   @media (max-width: 640px) {
-    flex-direction: column;
     gap: 15px;
   }
 `;
@@ -45,7 +37,7 @@ export const CardMainInfo = styled.div`
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
   overflow: hidden;
   margin-bottom: 18px;
 
@@ -58,7 +50,7 @@ export const CardMainInfo = styled.div`
     }
   }
   .card-description {
-    font-size: 14px;
+    font-size: 16px;
     color: #d1d5db;
     line-height: 1.5;
     height: 42px;
@@ -67,7 +59,6 @@ export const CardMainInfo = styled.div`
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
-    margin-bottom: 10px;
   }
 `;
 
@@ -75,13 +66,10 @@ export const CardMainInfo = styled.div`
 export const CardHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-direction: column-reverse;
+  align-items: flex-start;
   min-width: 0;
-  margin-bottom: 10px;
   @media (max-width: 640px) {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
     .card-title {
       margin-right: 0;
     }
@@ -105,6 +93,7 @@ export const CardHeader = styled.div`
     flex-shrink: 0;
     background-color: #222;
     color: #60a5fa;
+    margin-bottom: 8px;
   }
 `;
 
@@ -120,9 +109,8 @@ export const CardImage = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 640px) {
-    width: 100%;
+    width: 30%;
     height: 120px;
-    order: -1;
   }
   img {
     width: 100%;
@@ -171,12 +159,8 @@ export const DetailItem = styled.div`
   max-width: ${(props) => props.$maxWidth};
 
   @media (max-width: 640px) {
-    font-size: 13px;
-    max-width: 100%;
-  }
-  @media (max-width: 400px) {
-    font-size: 11px;
-    max-width: 70px;
+    font-size: 14px;
+    width: auto;
   }
 
   .location {
@@ -185,6 +169,9 @@ export const DetailItem = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    @media (max-width: 640px) {
+      max-width: 110px;
+    }
   }
 `;
 

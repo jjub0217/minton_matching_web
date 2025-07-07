@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const DetailContainer = styled.div`
-  max-width: 480px;
   margin: 32px auto;
   background: #18181b;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   padding: 0 0 32px 0;
-  border: 1px solid #111;
+  .inner {
+    padding: 0 24px;
+  }
 `;
 
 export const MeetingPlaceImage = styled.div`
@@ -29,7 +30,8 @@ export const HostProfile = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 20px 24px 8px 24px;
+
+  padding: 20px 0px 8px 0px;
 `;
 
 export const HostProfileImage = styled.div`
@@ -72,7 +74,7 @@ export const HostProfileMetaInfo = styled.p`
 
 // meeting-time, meeting-place
 export const MeetingInfo = styled.div`
-  padding: 4px 24px;
+  padding: 4px 0px;
   font-size: 15px;
   color: #d1d5db;
   display: flex;
@@ -84,8 +86,8 @@ export const MeetingInfo = styled.div`
 `;
 
 // meeting-content
-export const MeetingDescription = styled.p`
-  padding: 31px 24px 23px 24px;
+export const MeetingDescription = styled.div`
+  padding: 31px 0px 23px 0px;
   font-size: 15px;
   color: #f3f4f6;
   line-height: 1.7;
@@ -93,7 +95,7 @@ export const MeetingDescription = styled.p`
 
 // meeting-map
 export const MeetingMapSection = styled.div`
-  padding: 0 24px 8px 24px;
+  padding: 0 0px 8px 0px;
 `;
 
 /* map-img */
@@ -135,7 +137,9 @@ export const PostStatus = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 24px 0 24px;
+
+  padding: 12px 0px 0 0px;
+
   font-size: 15px;
 `;
 
@@ -165,25 +169,4 @@ export const ViewLike = styled.div`
 export const ViewCount = styled.div`
   color: #9ca3af;
   margin-left: auto;
-`;
-
-// participants-section
-export const ParticipantsContainer = styled.section`
-  padding: 18px 24px 0 24px;
-`;
-
-// participant-count
-export const ParticipantCount = styled.div`
-  font-size: 15px;
-  color: #f3f4f6;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  .participant-member {
-    line-height: 1;
-  }
-  .over-capacity {
-    color: #e11d48;
-  }
 `;
