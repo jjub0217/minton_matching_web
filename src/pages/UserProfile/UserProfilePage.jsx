@@ -1,19 +1,18 @@
 import { userInfo } from "../../data/user.json";
-import { StatBox } from "./components/StatBox/StatBox";
-import { UserHistoryBox } from "./userHistoryBox";
+import { StatBox } from "./components/StatBox";
+import { UserHistoryBox } from "./components/UserHistoryBox";
 
+import { PageContainer } from "../../components/Common/PageContainer.style";
 import {
   ParticipantHistorySection,
   ParticipantImage,
   ParticipantInfo,
-  ParticipantInfoBox,
   ParticipantProfile,
   ParticipantStats,
 } from "./UserProfilePage.styles";
-
 export const UserProfilePage = () => {
   return (
-    <ParticipantInfoBox>
+    <PageContainer>
       <ParticipantProfile>
         <ParticipantImage>
           <img src={userInfo.profile.imgUrl} alt={userInfo.name} />
@@ -43,6 +42,6 @@ export const UserProfilePage = () => {
           ))}
         </ul>
       </ParticipantHistorySection>
-    </ParticipantInfoBox>
+    </PageContainer>
   );
 };
