@@ -2,7 +2,7 @@ import {
   RecommendCard,
   RecommendCardImage,
   RecommendCardInfo,
-} from "./Recommendations.styles";
+} from "./RecommendationList.styles";
 
 export const RecommendationItem = ({ title, image, location }, ref) => {
   return (
