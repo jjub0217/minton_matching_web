@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import { StatusBadge } from "../../../../components/Common/StatusBadge.style";
 import {
-  Badge,
   ParticipantImage,
   ParticipantMember,
-} from "./Participant.styles";
+} from "./ParticipantsContainer.styles";
 
 export const ParticipantMemberItem = ({ id, userName, role, profileImg }) => {
   const navigate = useNavigate();
@@ -17,7 +17,14 @@ export const ParticipantMemberItem = ({ id, userName, role, profileImg }) => {
         <img src={profileImg} alt={role} />
       </ParticipantImage>
       <span className="participant-id">{userName}</span>
-      <Badge role={role}>{role}</Badge>
+      <StatusBadge
+        $status={role}
+        $textColor={"#18181b"}
+        $padding={"2px 8px"}
+        $radius={"8px"}
+      >
+        {role}
+      </StatusBadge>
     </ParticipantMember>
   );
 };
