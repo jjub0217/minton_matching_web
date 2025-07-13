@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
-// participant-detail-container
-export const ParticipantInfoBox = styled.div`
-  max-width: 420px;
-  margin: 32px auto;
-  background: #18181b;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  padding: 0 0 32px 0;
-  border: 1px solid #111;
+// pages/UserProfile/UserProfilePage.style.js
+
+export const ParticipantProfile = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 28px 24px 12px 24px;
   .participant-grade {
     background: #6366f1;
     color: #fff;
@@ -18,14 +16,6 @@ export const ParticipantInfoBox = styled.div`
     font-weight: 500;
     margin-left: 8px;
   }
-`;
-
-// participant-profile-row
-export const ParticipantProfile = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  padding: 28px 24px 12px 24px;
 `;
 
 export const ParticipantImage = styled.div`
@@ -41,7 +31,6 @@ export const ParticipantImage = styled.div`
   }
 `;
 
-// participant-profile-info
 export const ParticipantInfo = styled.div`
   display: flex;
   flex-direction: column;
@@ -58,7 +47,6 @@ export const ParticipantInfo = styled.div`
   }
 `;
 
-// participant-stats-row
 export const ParticipantStats = styled.div`
   display: flex;
   gap: 18px;
@@ -66,7 +54,6 @@ export const ParticipantStats = styled.div`
   justify-content: center;
 `;
 
-// participant-history-section
 export const ParticipantHistorySection = styled.div`
   padding: 24px 24px 0 24px;
   .history-title {
@@ -74,5 +61,46 @@ export const ParticipantHistorySection = styled.div`
     color: #f3f4f6;
     margin-bottom: 10px;
     font-weight: 600;
+  }
+`;
+
+export const HistoryItem = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #232323;
+  .history-date {
+    font-size: 13px;
+    color: #a1a1aa;
+    min-width: 80px;
+  }
+  .history-title-text {
+    font-size: 15px;
+    color: #f3f4f6;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+`;
+
+export const State = styled.div`
+  background: #222;
+  border-radius: 10px;
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px;
+  .stat-label {
+    font-size: 13px;
+    color: #a1a1aa;
+    margin-bottom: 4px;
+  }
+  .stat-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fbbf24;
   }
 `;
