@@ -11,7 +11,7 @@ import {
   MoreSlideButton,
   MoreSlideButtonBox,
   Section,
-} from "./Recommendations.styles";
+} from "./RecommendationList.styles";
 
 export const RecommendationList = ({ recommendations }) => {
   const RecommendationSlides = useMemo(
