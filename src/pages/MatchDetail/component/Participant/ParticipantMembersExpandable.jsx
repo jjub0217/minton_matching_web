@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
+import { ParticipantMemberItem } from "./ParticipantMemberItem";
 import {
   ParticipantsMemberList,
   ParticipantsMembers,
-} from "./Participant.styles";
-import { ParticipantMemberItem } from "./ParticipantMemberItem";
+} from "./ParticipantsContainer.styles";
 
 export const ParticipantMembersExpandable = ({ participants }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -11,7 +11,6 @@ export const ParticipantMembersExpandable = ({ participants }) => {
   const listRef = useRef(null);
 
   const visibleCount = 5;
-  console.log(participants);
 
   useEffect(() => {
     if (listRef.current) {
