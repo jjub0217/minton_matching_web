@@ -1,15 +1,6 @@
 import styled from "styled-components";
 
-export const DetailContainer = styled.div`
-  margin: 32px auto;
-  background: #18181b;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  padding: 0 0 32px 0;
-  .inner {
-    padding: 0 24px;
-  }
-`;
+// pages/MatchDetail/MatchDetailPage.style.js
 
 export const MeetingPlaceImage = styled.div`
   width: 100%;
@@ -25,38 +16,19 @@ export const MeetingPlaceImage = styled.div`
   }
 `;
 
-// profile-row
 export const HostProfile = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
-
   padding: 20px 0px 8px 0px;
 `;
 
-export const HostProfileImage = styled.div`
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid #222;
-
-  /* profile-img */
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-`;
-
-// profile-info
 export const HostProfileInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2px;
   flex: 1;
 
-  /* profile-id */
   .host-id {
     font-size: 16px;
     font-weight: 600;
@@ -64,7 +36,6 @@ export const HostProfileInfo = styled.div`
   }
 `;
 
-// profile-town-time
 export const HostProfileMetaInfo = styled.p`
   font-size: 14px;
   color: #94a3b8;
@@ -72,7 +43,6 @@ export const HostProfileMetaInfo = styled.p`
   gap: 3px;
 `;
 
-// meeting-time, meeting-place
 export const MeetingInfo = styled.div`
   padding: 4px 0px;
   font-size: 15px;
@@ -85,7 +55,6 @@ export const MeetingInfo = styled.div`
   }
 `;
 
-// meeting-content
 export const MeetingDescription = styled.div`
   padding: 31px 0px 23px 0px;
   font-size: 15px;
@@ -93,12 +62,10 @@ export const MeetingDescription = styled.div`
   line-height: 1.7;
 `;
 
-// meeting-map
 export const MeetingMapSection = styled.div`
   padding: 0 0px 8px 0px;
 `;
 
-/* map-img */
 export const MeetingMapImage = styled.div`
   width: 100%;
   height: 240px;
@@ -114,7 +81,6 @@ export const MeetingMapImage = styled.div`
   }
 `;
 
-// map-info
 export const MeetingMapInfo = styled.div`
   margin-top: 6px;
   display: flex;
@@ -132,7 +98,6 @@ export const MeetingMapInfo = styled.div`
   }
 `;
 
-// like-view-row
 export const PostStatus = styled.div`
   display: flex;
   align-items: center;
@@ -143,7 +108,6 @@ export const PostStatus = styled.div`
   font-size: 15px;
 `;
 
-// like-btn
 export const ViewLike = styled.div`
   background: none;
   border: none;
@@ -165,7 +129,6 @@ export const ViewLike = styled.div`
   }
 `;
 
-// view-count
 export const ViewCount = styled.div`
   color: #9ca3af;
   margin-left: auto;
