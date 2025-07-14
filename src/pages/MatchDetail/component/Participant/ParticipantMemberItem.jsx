@@ -12,19 +12,26 @@ export const ParticipantMemberItem = ({ id, userName, role, profileImg }) => {
     navigate(`/userInfo/${userId}`);
   };
   return (
-    <ParticipantMember onClick={() => handleUserProfile(id)}>
-      <ParticipantImage>
-        <img src={profileImg} alt={role} />
-      </ParticipantImage>
-      <span className="participant-id">{userName}</span>
-      <StatusBadge
-        $status={role}
-        $textColor={"#18181b"}
-        $padding={"2px 8px"}
-        $radius={"8px"}
+    <ParticipantMember>
+      <button
+        type="button"
+        onClick={() => handleUserProfile(id)}
+        aria-label={`${userName}님의 프로필 보기`}
       >
-        {role}
-      </StatusBadge>
+        <ParticipantImage>
+          <img src={profileImg} alt={userName} />
+        </ParticipantImage>
+        <span className="participant-id">{userName}</span>
+        <StatusBadge
+          $status={role}
+          $textColor={"#18181b"}
+          $padding={"2px 8px"}
+          $radius={"8px"}
+          aria-label={`역할: ${role}`}
+        >
+          {role}
+        </StatusBadge>
+      </button>
     </ParticipantMember>
   );
 };
