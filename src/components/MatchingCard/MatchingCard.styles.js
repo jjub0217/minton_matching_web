@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const MatchingCardItem = styled.li`
-  background-color: #18181b;
+  background-color: #111;
   border: 3px solid #111;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  min-height: 160px;
   cursor: pointer;
 
   &:hover {
@@ -22,7 +21,6 @@ export const CardMainInfoBox = styled.div`
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  height: 100%;
   min-width: 0;
   color: #f3f4f6;
 
@@ -53,7 +51,7 @@ export const CardMainInfo = styled.div`
     font-size: 16px;
     color: #d1d5db;
     line-height: 1.5;
-    height: 42px;
+    min-height: 50px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
