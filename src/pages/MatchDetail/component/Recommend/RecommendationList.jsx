@@ -36,8 +36,12 @@ export const RecommendationList = ({ recommendations }) => {
 
   return (
     <Section>
-      <h2 className="recommend-title">이런 모임도 추천해요</h2>
+      <h2 id="recommend-heading" className="recommend-title">
+        이런 모임도 추천해요
+      </h2>
       <Swiper
+        aria-labelledby="recommend-heading"
+        role="region"
         modules={[Autoplay, Navigation, Pagination]}
         navigation={true}
         speed={600}
