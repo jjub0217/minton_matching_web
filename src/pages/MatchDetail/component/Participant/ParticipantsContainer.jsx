@@ -34,13 +34,14 @@ export const ParticipantsContainer = ({ participants, time }) => {
       {/* 미팅 참여인원 */}
       <ParticipantCount>
         <span className="participant-member">참여중인 인원</span>
-        <p>
+        <p aria-live="polite">
           <span
             className={
               participants.list.length > participants.count.capacity
                 ? "over-capacity"
                 : ""
             }
+            aria-label={`현재 인원 ${participants.list.length}명`}
           >
             {participants.list.length}
           </span>
