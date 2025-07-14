@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 // pages/MatchDetail/MatchDetailPage.style.js
-
-export const MeetingPlaceImage = styled.div`
+export const Inner = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+export const MeetingPlaceImageBox = styled.figure`
   width: 100%;
   height: 220px;
   border-radius: 16px 16px 0 0;
@@ -16,42 +19,44 @@ export const MeetingPlaceImage = styled.div`
   }
 `;
 
-export const HostProfile = styled.div`
+export const HostProfileSection = styled.section`
   display: flex;
   align-items: center;
   gap: 16px;
   padding: 20px 0px 8px 0px;
 `;
 
-export const HostProfileInfo = styled.div`
+export const HostProfileInfoBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2px;
   flex: 1;
 
-  .host-id {
+  #host-id {
     font-size: 16px;
     font-weight: 600;
     color: #f8fafc;
   }
 `;
 
-export const HostProfileMetaInfo = styled.p`
+export const HostProfileMetaInfoList = styled.ul`
   font-size: 14px;
   color: #94a3b8;
   display: flex;
   gap: 3px;
 `;
 
-export const MeetingInfo = styled.div`
+export const MeetingInfoList = styled.ul`
   padding: 4px 0px;
-  font-size: 15px;
-  color: #d1d5db;
   display: flex;
-  align-items: center;
-  gap: 8px;
-  .icon {
-    font-size: 17px;
+  flex-direction: column;
+  gap: 4px;
+  li {
+    font-size: 15px;
+    color: #d1d5db;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 `;
 
@@ -62,7 +67,7 @@ export const MeetingDescription = styled.div`
   line-height: 1.7;
 `;
 
-export const MeetingMapSection = styled.div`
+export const MeetingMapSection = styled.section`
   padding: 0 0px 8px 0px;
 `;
 
@@ -82,10 +87,10 @@ export const MeetingMapImage = styled.div`
 `;
 
 export const MeetingMapInfo = styled.div`
-  margin-top: 6px;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  margin-top: 12px;
   .map-building {
     font-weight: 600;
     color: #f3f4f6;
@@ -102,9 +107,7 @@ export const PostStatus = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
-
   padding: 12px 0px 0 0px;
-
   font-size: 15px;
 `;
 
@@ -115,13 +118,9 @@ export const ViewLike = styled.div`
   color: #9ca3af;
   transition: color 0.2s;
   display: flex;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
 
-  .heart {
-    font-size: 18px;
-    vertical-align: middle;
-  }
   .like-count {
     font-size: 15px;
     color: #9ca3af;
@@ -132,4 +131,7 @@ export const ViewLike = styled.div`
 export const ViewCount = styled.div`
   color: #9ca3af;
   margin-left: auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
 `;
