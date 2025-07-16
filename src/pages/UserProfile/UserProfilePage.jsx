@@ -15,14 +15,16 @@ export const UserProfilePage = () => {
     <PageContainer>
       <ParticipantProfile>
         <ParticipantImage>
-          <img src={userInfo.profile.imgUrl} alt={userInfo.name} />
+          <img
+            src={userInfo.profile.imgUrl}
+            alt={`${userInfo.profile.name}의 프로필 사진`}
+          />
         </ParticipantImage>
 
         <ParticipantInfo>
           <span className="participant-name">{userInfo.profile.name}</span>
           <span className="participant-joined">
-            <span>가입일:</span>
-            <span>{userInfo.profile.joined}</span>
+            <span>가입일: {userInfo.profile.joined}</span>
           </span>
         </ParticipantInfo>
 
