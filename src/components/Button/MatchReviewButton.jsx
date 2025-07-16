@@ -9,12 +9,12 @@ export const MatchReviewButton = () => {
   const toggleJoin = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    navigate(`/${id}/review`);
+    navigate(`/review/${id}`);
   };
 
   return (
     <ReviewButton type="button" onClick={toggleJoin} title="모임 리뷰하기">
-      <span className="heart">모임 리뷰하기</span>
+      <span>모임 리뷰하기</span>
     </ReviewButton>
   );
 };
