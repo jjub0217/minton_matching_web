@@ -1,8 +1,8 @@
 import { ActionButton } from "../../components/Button/ActionButton";
 import { PageContainer } from "../../components/Common/PageContainer.style";
 import { notification } from "../../data/notification.json";
+import { NotificationItem } from "../components/NotificationItem";
 import { Header } from "./NotificationPage.style";
-import { NotificationItem } from "./components/notificationItem";
 export const NotificationPage = () => {
   return (
     <PageContainer $padding={"0"} height={"100vh"}>
