@@ -1,0 +1,58 @@
+{
+  "match": {
+    "id": 1,
+    "title": "강남구 배드민턴 모임",
+    "time": "2024-01-15",
+    "place": "강남구민체육관",
+    "capacity": 6,
+    "currentCapacity": 3,
+    "participants": [
+      {
+        "id": 11,
+        "name": "김철수",
+        "state": "approval",
+        "grade": "B조",
+        "reviewScore": 4.5,
+        "ParticipationRate": 95,
+        "imgUrl": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      {
+        "id": 12,
+        "name": "이영희",
+        "state": "approval",
+        "grade": "B조",
+        "reviewScore": 4.5,
+        "ParticipationRate": 88,
+        "imgUrl": "https://randomuser.me/api/portraits/women/44.jpg"
+      },
+      {
+        "id": 13,
+        "name": "박민수",
+        "state": "approval",
+        "grade": "B조",
+        "reviewScore": 4.5,
+        "ParticipationRate": 92,
+        "imgUrl": "https://randomuser.me/api/portraits/men/45.jpg"
+      },
+      {
+        "id": 14,
+        "name": "정현우",
+        "state": "pending",
+        "grade": "B조",
+        "reviewScore": 4.5,
+        "ParticipationRate": 80,
+        "imgUrl": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      {
+        "id": 15,
+        "name": "한소희",
+        "state": "reject",
+        "grade": "B조",
+        "reviewScore": 4.5,
+        "ParticipationRate": 65,
+        "rejectReason": "급수 조건 미달로 거절",
+        "imgUrl": "https://randomuser.me/api/portraits/women/44.jpg"
+      }
+    ]
+  }
+}
