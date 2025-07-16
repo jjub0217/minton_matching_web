@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LikeButton } from "./Button.styles";
+import { ParticipantButton } from "../Common/Button.styles";
 
 export const JoinButton = () => {
   const [isJoin, setIsJoin] = useState(false);
@@ -11,13 +11,8 @@ export const JoinButton = () => {
   };
 
   return (
-    <LikeButton
-      type="button"
-      onClick={toggleJoin}
-      $isJoin={isJoin}
-      title="참여하기"
-    >
-      <span className="heart">참여하기</span>
-    </LikeButton>
+    <ParticipantButton type="button" onClick={toggleJoin} title="참여하기">
+      <span>참여하기</span>
+    </ParticipantButton>
   );
 };
