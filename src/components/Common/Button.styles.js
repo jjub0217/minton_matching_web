@@ -6,6 +6,10 @@ const FormMatchingButtonStyle = `
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  &:focus-visible { 
+    outline: 2px solid #4caf50; 
+    outline-offset: 2px; 
+  }
 `;
 
 const HandlePageButtonStyle = `
@@ -15,7 +19,7 @@ const HandlePageButtonStyle = `
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-    color: #fff;
+  color: #fff;
 `;
 
 export const ParticipantButton = styled.button`
@@ -117,6 +121,43 @@ export const ApproveButton = styled(SaveBtn)`
 `;
 
 export const RejectedButton = styled(SaveBtn)`
-  ${HandlePageButtonStyle}
   background-color: #d32f2f;
+`;
+
+export const SocialBtn = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: transform 0.15s;
+  background-color: #fff;
+  cursor: pointer;
+  &.kakao {
+    background-color: #fee500;
+  }
+  &.naver {
+    background-color: #03c75a;
+  }
+`;
+export const SocialBtnImage = styled.div`
+  width: 50%;
+  height: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const ActionBtn = styled.button`
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+  }
 `;
