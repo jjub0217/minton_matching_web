@@ -9,6 +9,10 @@ export const PageContainer = styled.div`
   height: ${(props) => props.height};
 `;
 
+export const PageContainerTitle1 = styled.h1`
+  font-size: 24px;
+  margin: ${(props) => (props.$margin ? props.$margin : "")};
+`;
 export const PageContainerTitle2 = styled.h2`
   margin: ${(props) => (props.$margin ? props.$margin : "")};
 `;
