@@ -4,9 +4,9 @@ import styled from "styled-components";
 const CommonSelectInputStyle = `
   flex: 1;
   padding: 12px 16px;
-  border: 2px solid #111;
+  border: 1px solid #333;
   border-radius: 8px;
-  background-color: #222;
+  background-color: #111;
   color: #f3f4f6;
   font-size: 16px;
   outline: none;
@@ -28,10 +28,12 @@ export const FilterContainer = styled.div`
   gap: 15px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 20px;
   margin-bottom: 40px;
-  background-color: #111;
-  padding: 20px 0;
-  border: 1px solid #111;
+
+  /* padding: 20px 0; */
+  /* margin: 20px 0; */
+  /* border: 1px solid #111; */
 
   @media (min-width: 768px) {
     flex-direction: row;
