@@ -11,7 +11,7 @@ import { TextField } from "../../components/FormField/TextField";
 import { userInfo } from "../../data/user.json";
 import { ExpandableReviewListSection } from "./components/ExpandableReviewListSection";
 import { LocationSection } from "./components/LocationSection";
-import { ProfileImageSection } from "./components/ProfileImageBox";
+import { ProfileImageSection } from "./components/ProfileImageSection";
 import { ProfileNicknameValue } from "./components/ProfileNicknameValue";
 import {
   Count,
