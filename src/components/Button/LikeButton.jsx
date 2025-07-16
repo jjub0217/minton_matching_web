@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { JoinButton } from "./Button.styles";
+import { FavoriteButton } from "../Common/Button.styles";
 
 export const LikeButton = () => {
   const [isFavorite, setIsFavorite] = useState(false);
@@ -11,13 +11,8 @@ export const LikeButton = () => {
   };
 
   return (
-    <JoinButton
-      type="button"
-      onClick={toggleFavorite}
-      $isFavorite={isFavorite}
-      title="좋아요"
-    >
+    <FavoriteButton type="button" onClick={toggleFavorite} title="좋아요">
       <span className="heart">♥</span>
-    </JoinButton>
+    </FavoriteButton>
   );
 };
