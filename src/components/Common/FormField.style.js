@@ -22,6 +22,10 @@ export const FormFieldBox = styled.div`
     border-radius: 6px;
     padding: 8px 10px;
     font-size: 15px;
+    &:focus-visible {
+      outline: 2px solid #60a5fa;
+      outline-offset: 2px;
+    }
   }
   .input-text.place {
     flex: 1;
@@ -38,6 +42,10 @@ export const FormFieldBox = styled.div`
     padding: 8px 14px;
     font-size: 14px;
     cursor: pointer;
+    &:focus-visible {
+      outline: 2px solid #60a5fa;
+      outline-offset: 2px;
+    }
   }
   .input-textarea {
     resize: none;
