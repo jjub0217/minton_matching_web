@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { PageContainer as BasePageContainer } from "../../components/Common/PageContainer.style";
-// pages/MatchCreate/MatchCreate.style.js
+// pages/MatchCreate/MatchCreatePage.style.js
 
 export const PageContainer = styled(BasePageContainer)`
   .inner {
