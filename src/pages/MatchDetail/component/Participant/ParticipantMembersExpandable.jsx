@@ -9,6 +9,7 @@ export const ParticipantMembersExpandable = ({ participants }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [containerHeight, setContainerHeight] = useState("0px");
   const listRef = useRef(null);
+  const buttonRef = useRef(null);
 
   const visibleCount = 5;
 
@@ -25,6 +26,11 @@ export const ParticipantMembersExpandable = ({ participants }) => {
     }
   }, [isExpanded, participants]);
 
+  useEffect(() => {
+    if (buttonRef.current && isExpanded) {
+      buttonRef.current.focus(); // 다시 초점 부여
+    }
+  }, [isExpanded]);
   return (
     <>
       <ParticipantsMembers style={{ height: containerHeight }}>
@@ -36,7 +42,12 @@ export const ParticipantMembersExpandable = ({ participants }) => {
       </ParticipantsMembers>
 
       {participants.length > visibleCount && (
-        <button className="more-btn" onClick={() => setIsExpanded(!isExpanded)}>
+        <button
+          type="button"
+          className="more-btn"
+          ref={buttonRef}
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
           {isExpanded ? "접기" : "더보기"}
         </button>
       )}
